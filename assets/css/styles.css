@@ -167,3 +167,40 @@ p {
     height: 35px;
     width: 80px;
 }
+@media screen and (max-width: 1020px) {
+    .main {
+        width: 90%;    
+     
+    } 
+    header {
+        width: 100%;
+    } 
+
+}
+@media screen and (max-width: 768px) {
+    .main {
+        width: 90%;
+        height: 550px;   
+     
+    } 
+    header {
+        width: 100%;
+    } 
+    
+
+}
+@media screen and (max-width: 671px) {
+    .main {
+        width: 90%;
+        height: 650px; 
+       
+    
+    }
+    header {
+        width: 100%;
+    }
+   
+        
+    
+
+}
