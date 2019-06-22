@@ -4,11 +4,6 @@ body {
 
 }
 
-.main {
-    height: 500px;
-    
-}
-
 #header-bg {
     background-color: white;
     /* width: 100%; */
@@ -26,7 +21,7 @@ header {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    width: 960px;
+    max-width: 960px;
     /* width: 100%;
     background-color: white; */
     
@@ -37,9 +32,22 @@ header {
 #nav-right {
     margin-left: auto;
     float: left;
-    /* position: absolute; */
-    /* display: inline-block; */
+}
 
+.main {
+    height: auto;
+
+    height: 500;
+    max-width: 960px;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding-bottom: 250px;
+    border: 1px ridge rgb(182, 174, 174);    
 }
 
 #name {
@@ -53,34 +61,17 @@ header {
 }
 
 h5 {
-    /* background-color:white; */
     color: gray;
-    /* float: left; */
     padding: 30px;
-    /* box-sizing: border-box; */
     margin:0;
     text-align: center;
     clear: both;
     display: inline-block;   
    
 }
+
 h5:hover {
-    background-color: rgb(198, 243, 235);
-  } 
-
-section {
-    height: 500;
-    width: 960px;
-    background-color: white;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-    padding-bottom: 250px;
-    border: 1px ridge rgb(182, 174, 174);
-
+   background-color: rgb(198, 243, 235);
 }
 
 footer {
@@ -90,7 +81,6 @@ footer {
     background-color: black;
     color: aliceblue;
     text-align: center;
-    /* padding: 5px; */
     padding-bottom: 10px;
     margin-bottom: 0;
     border-top: 3px;
@@ -108,16 +98,8 @@ footer {
     justify-content: space-between;
 }
 
-.item {
-    /* width: 200px; */
-    /* height: 30px; */
-    /* color: white; */
-    /* background-color:  rgb(33, 160, 132); */
-    /* position: absolute; */
-    /* text-align: center;  */
-}
-
 .picture-text {
+    
     position: relative;
     bottom: 60px;
     width: 100%;
@@ -127,6 +109,7 @@ footer {
     background-color:  rgb(33, 160, 132);
     color: white;
     text-align: center;
+    
 }
 #submit {
     background-color: rgb(33, 160, 132);
@@ -167,40 +150,59 @@ p {
     height: 35px;
     width: 80px;
 }
-@media screen and (max-width: 1020px) {
-    .main {
-        width: 90%;    
-     
-    } 
-    header {
+
+.item {
+    display: inline-block;
+}
+
+@media screen and (max-width: 980px) {
+  
+    /* header {
         width: 100%;
-    } 
+    }  */
+
+    #images {
+        display: block;
+    }
+
+    .main {
+        width: 95%;
+    }
+
 
 }
 @media screen and (max-width: 768px) {
-    .main {
-        width: 90%;
-        height: 550px;   
-     
-    } 
-    header {
+    body {
+        text-align: center;
+    }  
+    
+    /* header {
         width: 100%;
-    } 
+    }  */
+    /* .first-line-pic {
+        width: 100%;
+        display: inline;
+    }
+   .second-line-pic {
+       width: 100%;
+       display: inline;
+   } */
+    
     
 
 }
-@media screen and (max-width: 671px) {
-    .main {
-        width: 90%;
-        height: 650px; 
-       
+/* 920-670 */
+@media screen and (max-width: 640px) {
     
-    }
-    header {
+    /* header {
         width: 100%;
-    }
-   
-        
-    
+    } */
+
+    /* .nav-right {
+        display: block;
+        text-align: center;
+        float: none;
+        margin-left: 0;
+    } */
 
 }
