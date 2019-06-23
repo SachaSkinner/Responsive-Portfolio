@@ -6,14 +6,13 @@ body {
 
 #header-bg {
     background-color: white;
-    /* width: 100%; */
     border-bottom: 3px solid grey;
     height: 78px;
 }
 
 header {
     
-    height: 79px;
+    /* min-height: 79px; */
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -22,52 +21,38 @@ header {
     justify-content: center;
     box-sizing: border-box;
     max-width: 960px;
-    /* width: 100%;
-    background-color: white; */
-    
-    position: relative;
-    /* background-color: aliceblue; */
+}
+
+#name {
+    background-color: rgb(33, 160, 132);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
 }
 
 #nav-right {
     margin-left: auto;
-    float: left;
+}
+
+.pages {
+    color: gray;
+    display: inline-block;
+    text-align: center;
+    padding: 30px;
+    margin:0;
 }
 
 .main {
     height: auto;
 
-    height: 500;
     max-width: 960px;
     background-color: white;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto;
     padding: 30px;
     box-sizing: border-box;
-    margin-bottom: 50px;
     padding-bottom: 250px;
     border: 1px ridge rgb(182, 174, 174);    
-}
-
-#name {
-    
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    float: left;
-    background-color: rgb(33, 160, 132);
-    color: white;
-}
-
-h5 {
-    color: gray;
-    padding: 30px;
-    margin:0;
-    text-align: center;
-    clear: both;
-    display: inline-block;   
-   
 }
 
 h5:hover {
@@ -156,17 +141,13 @@ p {
 }
 
 @media screen and (max-width: 980px) {
-  
-    /* header {
-        width: 100%;
-    }  */
 
     #images {
         display: block;
     }
 
     .main {
-        width: 95%;
+        /* width: 95%; */
     }
 
 
@@ -176,33 +157,15 @@ p {
         text-align: center;
     }  
     
-    /* header {
-        width: 100%;
-    }  */
-    /* .first-line-pic {
-        width: 100%;
-        display: inline;
-    }
-   .second-line-pic {
-       width: 100%;
-       display: inline;
-   } */
-    
-    
-
 }
 /* 920-670 */
 @media screen and (max-width: 640px) {
-    
-    /* header {
-        width: 100%;
-    } */
-
-    /* .nav-right {
+    header {
         display: block;
-        text-align: center;
-        float: none;
-        margin-left: 0;
-    } */
+    }
+
+    .main {
+        margin-top: 70px;
+    }  
 
 }
